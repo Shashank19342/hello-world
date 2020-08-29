@@ -1,0 +1,257 @@
+body{
+             font-family: arial
+}
+/* ==================================================== HEADING ============================================= */
+h1 {         color: black;
+             font-family: comic sans ms,tahoma,helvetica
+             text-align: centre;
+             text-decoration: none;
+             font-size: 50px;
+}
+h2 {         font-size: 30px;
+             border-bottom: 3px dotted black;
+             color: rgb(255,21,21);
+}
+h3 {         font-size: 20px;
+             color: rgb(110,110,110);
+}
+h4 {         font-family: elephant;
+             text-decoration: underline;
+             color: rgb(122,122,122);
+}
+/* ============================================================= MAIN ==============================================*/
+p {          color: rgb(170,170,170);
+             font-size: 17px;
+             font-family: verdana;
+             margin-right: 200px;
+}
+p:hover {
+            color: rgb(255,176,13);
+}
+p::first-letter {
+             font-weight: bold;
+             font-size: 24px;
+             color: rgb(150,150,150);
+}
+.mid_head {
+             font-size: 25px;
+             text-align: center;
+}	
+.youtube {
+             font-size: 30px;
+             background-color: rgb(196,48,43);
+             color: white;
+             padding: 10px;
+             border-style: solid;
+             border-width: 2px;
+             border-radius: 15px;
+             border-color: rgb(196,48,43);
+	     transition: all 0.3s linear;
+}
+.youtube:hover {
+             background-color: white;
+             color: rgb(196,48,43);
+             border-width: 2px;
+             border-style: solid;
+}
+.paid {
+             font-size: 30px;
+             background-color: rgb(133, 187, 101);
+             color: white;
+             padding: 10px;
+             padding-right: 20px;
+             padding-left: 20px;
+             border-style: solid;
+             border-width: 2px;
+             border-radius: 15px;
+             border-color: rgb(133, 187, 101);
+	     transition: all 0.3s linear;
+}
+.paid:hover {
+             background-color: white;
+             color: rgb(133, 187, 101);
+}
+.free {
+             font-size: 30px;
+             background-color: rgb(0, 202, 182);
+             color: white;
+             padding: 10px;
+             padding-right: 20px;
+             padding-left: 20px;
+             border-style: solid;
+             border-width: 2px;
+             border-radius: 15px;
+             border-color: rgb(0, 202, 182);
+	     transition: all 0.3s linear;
+}
+.free:hover {
+             background-color: white;
+             color: rgb(0, 202, 182);
+}
+.border_design {
+             border-color: black;
+             border-width: 3px;
+             border-radius: 15px;
+             border-style: solid;
+	     padding: 10px;
+}
+.border_design:hover {
+             border-width: 3px;
+             border-color: rgb(255,176,13);
+             border-style: solid;
+}
+/* ====================================================== IMAGES AND VEDIOS ====================================*/
+.codechef_image, .hackerrank_image, .codeforces_image, .coursera_image, .udacity_image {
+             float: left;
+             margin-right: 100px;
+             margin-bottom: 20px;
+}
+.udacity_image {
+	     margin-bottom: 45px;
+}
+.udemy_image {
+             float: left;
+             margin-right: 100px;
+             margin-bottom: 40px;
+}
+.boston_image {
+             float: left;
+             margin-right: 100px;
+}
+.telusko_image {
+             float: left;
+             margin-right: 100px;
+             margin-bottom: 15px;
+}
+.newboston_vedio, .telusko_vedio {
+             border-color: black;
+             border-width: 5px;
+             border-style: inset;
+             border-radius: 10px;
+             float: right;
+}
+.newboston_vedio {
+             margin-top: 50px;
+             margin-bottom: 20px;
+             margin-right: 10px;
+}
+.telusko_vedio {
+             margin-top: 20px;
+             margin-right: 10px;
+             margin: bottom: 10px;
+}
+/* ================================================= LINKS ================================================*/
+a:link {
+             background-color: rgb(71,164,199);
+             text-decoration: none;
+             color: purple;
+             font-size: 17px;
+             padding: 10px;
+             border-radius: 18px;
+	     transition: all 0.3s linear;
+}
+a:hover {
+             background-color: rgb(50,108,167);
+             color: white;
+}
+#menu {
+             background-color: rgb(61,113,9);
+             position: fixed;
+             width: 100%;
+             height: 40px;
+             line-height: 40px;
+             bottom: 0px;
+             left: 0px;
+             margin: 0;
+             padding: 0;
+}
+#menu ul {
+             padding: 0;
+             margin: 0;
+             list-style-type: none;
+             text-align: center;
+}
+#menu list {
+             display: inline;
+             padding: 70px;
+             vertical-align: middle;
+}
+#menu a{
+             text-decoration: none;
+             font-size: 20px;
+             padding: 20px, 8px, 8px;
+             vertical-align: middle;
+             border: none;
+             background: none;
+             color: black;
+             border-radius: 0px;
+	     transition: all 0.3s linear;
+}
+#menu a:hover{
+             color: rgb(209,209,190);
+}
+/* ===================================================== MEDIA QUERY =========================================*/
+@media (max-width: 1000px){
+#menu{
+	width: 100%;
+	height: 60px;
+}
+#menu list{
+	padding: 50px;
+}
+#menu a{
+	
+	font-size: 40px;
+}
+p{
+	font-size: 35px;
+	margin-right: 10px;
+	color: blue;
+}
+p::first-letter{
+	font-size: 50px;
+}
+.codechef_image, .hackerrank_image, .codeforces_image{
+	width: 50%;
+	height: 50%;
+	margin-right: 100%;
+}
+.telusko_image, .boston_image,.udemy_image, .udacity_image, .coursera_image{
+	margin-right: 100%;
+	width: 50%;
+	height: 50%;
+}
+.newboston_vedio, .telusko_vedio {
+	width: 93%;
+	height: 500px;
+	margin-left: 100%;
+	margin-bottom: 10px;
+}
+.border_design{
+	margin: 0px;
+}
+}
+
+@media (max-width: 980px){
+
+img{
+	width: 50%;
+	height: 50%;
+}
+p{
+	color: pink;
+}
+
+.mid_head {
+	font-size: 20px;
+}
+.youtube, .free, .paid {
+	font-size: 20px;
+}
+.border_design{
+	margin-right: 0px;
+}
+}
+
+
+
